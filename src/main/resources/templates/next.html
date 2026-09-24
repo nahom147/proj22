@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>First Page</title>
+	</head>	
+	
+	<body>
+		<h1>Next Html File...</h1>
+		
+		<hr>
+		
+		<table border="1" width="60%" align="center">			
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>College</th>
+					<th>Marks</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr th:each="user : ${users}">
+					<td th:text="${user.name}">User Name</td>
+					<td th:text="${user.age}">User Age</td>
+					<td th:text="${user.college}">User College</td>
+					<td th:text="${user.marks}">User Marks</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+
+</html>
